@@ -1,0 +1,25 @@
+{
+  "name": "phantomjs-testing-utils",
+  "version": "0.0.1",
+  "description": "A collection of testing scripts using PhantomJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chriteixeira/phantomjs-testing-utils.git"
+  },
+  "keywords": [
+    "PhantomJS Testing scripts"
+  ],
+  "author": "Christiano Teixeira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chriteixeira/phantomjs-testing-utils/issues"
+  },
+  "homepage": "https://github.com/chriteixeira/phantomjs-testing-utils#readme",
+  "dependencies": {
+    "resemblejs": "^2.2.1"
+  }
+}

@@ -1,2 +1,2 @@
-# phatomjs-render-list
-Render a list of pages using PhatomJS
+# phatomjs-testing-utils
+Collection of simple scripts to execute visual tests in pages using PhantomJS
