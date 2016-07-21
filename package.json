@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/chriteixeira/phantomjs-testing-utils#readme",
   "dependencies": {
-    "resemblejs": "^2.2.1"
+    "resemblejs": "^2.2.1",
+    "image-processing-toolbox": "../image-processing-toolbox"
   }
 }
