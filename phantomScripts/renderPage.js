@@ -30,14 +30,14 @@ function renderSections(page, htmlCollection) {
     }
 }
 
-function execute(url, options) {
+function execute(url, options) { 
     var _page = webpage.create();
     var _debug = true;
 
-    // if (options !== undefined) {
-    //     _page.viewportSize = options.viewportSize;
-    //     options.debug = true;
-    // }
+    if (options !== undefined) {
+        _page.viewportSize = options.viewportSize;
+        options.debug = true;
+    }
 
     // Open the page and log the error
     _page.open(url, function (status) {
@@ -45,7 +45,10 @@ function execute(url, options) {
             return console.error('Error opening page - Status ' + status);
         if (_debug) console.log('Opening url');
 
-
+        _page.viewportSize = {
+            width: 1280,
+            height: 720
+        };
         var bodyChildrenBounds = _page.evaluate(function () {
             var result = [];
             var htmlCollection = document.body.children;
@@ -67,7 +70,7 @@ function execute(url, options) {
                 width: bodyChildrenBounds[i].width,
                 height: bodyChildrenBounds[i].height
             };
-            _page.render('results/section_' + i + '-' + bodyChildrenBounds[i]);
+            _page.render('results/section_' + i + '.png');
         }
 
         _page.close();
