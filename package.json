@@ -24,6 +24,7 @@
     "deasync": "^0.1.7",
     "express": "^4.14.0",
     "image-processing-toolbox": "../image-processing-toolbox",
+    "lodash": "^4.14.1",
     "phantom": "^2.1.13",
     "request": "^2.73.0",
     "resemblejs": "^2.2.1"
